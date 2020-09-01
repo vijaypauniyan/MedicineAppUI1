@@ -1,0 +1,73 @@
+<div class="animated fadeIn">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <strong>Edit </strong> userform
+            </div>
+            <form (ngSubmit)="onSubmit()" method="post" [formGroup]="userform" class="form-horizontal">
+            <div class="card-body">
+           
+               
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="text-input">medicine Name</label>
+                  <div class="col-md-9">
+                    <input type="text"  formControlName="Fullname"  name="Fullname" class="form-control" placeholder="First Name">
+                    <span class="help-block">This is a help text</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="LastName">brand Name</label>
+                    <div class="col-md-9">
+                      <input type="text"  formControlName="brand"  name="brand" class="form-control" placeholder="Last Name">
+                      <span class="help-block">This is a help text</span>
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="email-input">price:</label>
+                  <div class="col-md-9">
+                    <input type="text" formControlName="price"  name="price" class="form-control" placeholder="Enter Email" autocomplete="email">
+                    <span class="help-block">Please enter your email</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="password-input">quantity</label>
+                  <div class="col-md-9">
+                    <input type="text" formControlName="Quantity"  name="Quantity" class="form-control" placeholder="Password" autocomplete="current-password">
+                    <span class="help-block">Please enter a primary number</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-3 col-form-label" for="password-input">note</label>
+                    <div class="col-md-9">
+                      <input type="text" formControlName="note"  name="note" class="form-control" placeholder="Password" autocomplete="current-password">
+                      <span class="help-block">Please enter a secondary number</span>
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label class="col-md-3 col-form-label" for="disabled-input">expiryDate</label>
+                  <div class="col-md-9">
+                    <input type="text" formControlName="expiryDate"  name="expiryDate" class="form-control" placeholder="Password" autocomplete="current-password">
+                    <span class="help-block">Please enter a secondary number</span>
+                  </div>
+                </div>
+              
+               
+         
+             
+               
+                
+               
+              
+             
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Submit</button>
+              <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
+            </div>
+        </form>
+          </div>
+         
+       
+      
+    </div>
